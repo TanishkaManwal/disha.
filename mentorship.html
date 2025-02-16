@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Hub</title>
+    <link rel="stylesheet" href="mentorship.css">
+</head>
+<body>
+    <header>
+        <h1>Mentorship Hub</h1>
+        <p>Find the right mentor to guide your career!</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search mentor by expertise..." onkeyup="searchMentors()">
+    </div>
+
+    <div class="mentors-container" id="mentors-list">
+        <!-- Mentors will be loaded here dynamically -->
+    </div>
+
+    <script src="mentorship.js"></script>
+</body>
+</html>

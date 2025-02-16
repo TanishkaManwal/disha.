@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation Hub - Disha</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px gray; }
+        .quote-box, .success-stories, .screen-time, .tasks, .journal { margin-top: 20px; padding: 15px; border-radius: 8px; background: #e3f2fd; }
+        button { padding: 10px 15px; margin-top: 10px; border: none; background: #007bff; color: white; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+
+    </style>
+     <link rel="stylesheet" href="motivation.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Motivation Hub</h2>
+        
+        <!-- Daily Quote Section -->
+        <div class="quote-box">
+            <h3>Quote of the Day</h3>
+            <p id="quote"></p>
+            <button onclick="newQuote()">New Quote</button>
+        </div>
+        
+        <!-- Success Stories -->
+        <div class="success-stories">
+            <h3>Success Story</h3>
+            <p id="story"></p>
+            <button onclick="newStory()">Next Story</button>
+        </div>
+        
+        <!-- Screen Time Challenge -->
+        <div class="screen-time">
+            <h3>Screen Time Challenge</h3>
+            <p>Focus Mode Active: <span id="timer">0</span> mins</p>
+            <button onclick="startTimer()">Start Focus</button>
+        </div>
+        
+        <!-- Personal Growth Tasks -->
+        <div class="tasks">
+            <h3>Today's Challenge</h3>
+            <p id="task"></p>
+            <button onclick="newTask()">Get Challenge</button>
+        </div>
+        
+        <!-- Journaling Space -->
+        <div class="journal">
+            <h3>Your Journal</h3>
+            <textarea id="journal-entry" rows="4" cols="40" placeholder="Write your thoughts..."></textarea>
+            <button onclick="saveJournal()">Save</button>
+        </div>
+    </div>
+
+    <script src="motivation.js"></script>
+</body>
+</html>

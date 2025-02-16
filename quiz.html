@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guidance Quiz</title>
+  <link rel="stylesheet" href="/quiz.css">
+</head>
+<body>
+  <h1>Career Guidance Quiz</h1>
+  <form id="quizForm">
+
+    <div class="question">
+      <label>1. What type of activities do you enjoy most in your free time?</label><br>
+      <input type="radio" name="q1" value="Creative Arts"> Creative Arts (painting, writing, designing)<br>
+      <input type="radio" name="q1" value="Data Analysis"> Solving puzzles or analyzing data<br>
+      <input type="radio" name="q1" value="Leadership"> Organizing events or leading groups<br>
+      <input type="radio" name="q1" value="Healthcare"> Caring for others or volunteering<br>
+      <input type="radio" name="q1" value="Engineering"> Building or fixing things<br>
+    </div>
+
+    <div class="question">
+      <label>2. Which subjects do you find the most interesting in school?</label><br>
+      <input type="radio" name="q2" value="STEM"> Science and Technology<br>
+      <input type="radio" name="q2" value="Mathematics"> Mathematics and Problem-solving<br>
+      <input type="radio" name="q2" value="Literature"> Literature and Social Sciences<br>
+      <input type="radio" name="q2" value="Business"> Business and Economics<br>
+      <input type="radio" name="q2" value="Sports"> Sports or Physical Education<br>
+    </div>
+
+    <div class="question">
+      <label>3. How do people often describe your strongest qualities?</label><br>
+      <input type="radio" name="q3" value="Creative"> Creative and imaginative<br>
+      <input type="radio" name="q3" value="Analytical"> Logical and analytical<br>
+      <input type="radio" name="q3" value="Persuasive"> Persuasive and confident<br>
+      <input type="radio" name="q3" value="Empathetic"> Empathetic and caring<br>
+      <input type="radio" name="q3" value="Practical"> Hands-on and practical<br>
+    </div>
+
+    <button type="button" onclick="calculateResult()">Submit Quiz</button>
+  </form>
+
+  <div id="result" class="result" style="display: none;"></div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
